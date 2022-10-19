@@ -22,12 +22,11 @@ class Users(models.Model):
         db_table = 'users'
 
 
-# class Userpark(models.Model):
-#     users_id = models.ForeignKey(Users,
-#                                  on_delete=models.CASCADE, )
-#     parkings_id = models.ForeignKey(Parkings,
-#                                     on_delete=models.CASCADE, )
-#
-#     class Meta:
-#         managed = False
-#         db_table = 'userpark'
+class Userpark(models.Model):
+    users_id = models.ForeignKey(Users,
+                                 on_delete=models.CASCADE, )
+    parkings_id = models.ForeignKey(Parkings,
+                                    on_delete=models.CASCADE, )
+    class Meta:
+        managed = False
+        db_table = 'userpark'

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import date
-from parking_app.models import Parkings, Users
+from parking_app.models import Parkings
 
 
 # Create your views here.
